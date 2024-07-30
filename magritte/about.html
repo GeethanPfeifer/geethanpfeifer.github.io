@@ -1,0 +1,40 @@
+<!--    This file is part of Magritte.
+    Copyright (C) 2024 Geethan Pfeifer
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>. -->
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Magritte: How to play | About</title>
+</head>
+
+
+<h1><a href="index.html">Magritte</a></h1>
+<h2>How to play</h2>
+<p>Magritte is a game about trying to maximize profit by buying a company's future (uncertain) profits for a fixed value.</p>
+<p>Each round, you will see a graph which is a PDF of a company's profit, in units of 1, which is conveniently also the value of that company. (Each round is a different company; a company's value does not carry over.)</p>
+<p>You will bid 'X' for this profit, and a company will accept any offer such that the logarithm of the company's value after taking this offer is greater than the expected value of the logarithm of the company's value assuming they don't accept this offer.</p>
+<p>It is assumed we have an infinite bankroll, so our goal is simply to maximize the EV of our profits (difference between our bid and the EV of the compny if they accept, 0 otherwise), by bidding as close as we can to a company's threshold without going lower than it.</p>
+<p>"Error" is our "missed" profits (EV).</p>
+<h2>About</h2>
+<p>This is something I made just for fun, the code is very ugly, and so is the game page.</p>
+<p>If you are interested in making this game prettier, and/or more full-fledged, please do so.</p>
+<p>Magritte uses <a href="https://www.chartjs.org/">chart.js</a>.</p>
+
+Copyright (C) 2024 Geethan Pfeifer. Licensed under the <a href="gpl-3.0.txt">GNU GPL v3</a>.
+</html>
