@@ -243,8 +243,9 @@ yrpf = 0;
 
 err = 0;
 
+acb = 0;
+
 function accumulate(){
-	console.log("hello");
 	var minaccept = r.mint();
 	var ev = r.EV();
 	
@@ -255,6 +256,7 @@ function accumulate(){
 		document.getElementById("rjac").innerHTML = "accepted";
 		
 		pfr = ev - bid;
+		acb++;
 	} else {
 
 		pfr = 0;
@@ -280,6 +282,8 @@ function accumulate(){
 	document.getElementById("pfpr").innerHTML = yrpf/ttr;
 	document.getElementById("err").innerHTML = err;
 	document.getElementById("errr").innerHTML = err/ttr;
+	
+	document.getElementById("acb").innerHTML = acb;
 	
 	r.chart.destroy();
 	r = new Round(3, "canv");
