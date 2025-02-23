@@ -1,0 +1,131 @@
+<! -- This file is part of Beat The Royals
+    Copyright (C) 2025 Geethan Pfeifer
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/ -->
+    
+<!DOCTYPE html>
+<html>
+<head>
+<title>Beat The Royals</title>
+</head>
+
+<!-- https://stackoverflow.com/a/7146788 -->
+<body>
+<p><a href="../index.html">return</a></p>
+<h1>Beat The Royals</h1>
+
+<form name="betf" action="javascript:;" onsubmit="userplacebet()">
+	<label>STANDARD</label>
+	<input type="radio" id="st1" value="st1" name="cho">
+	<label for="st1">A</label>
+	<input type="radio" id="st2" value="st2" name="cho">
+	<label for="st2">2</label>
+	<input type="radio" id="st3" value="st3" name="cho">
+	<label for="st3">3</label>
+	<input type="radio" id="st4" value="st4" name="cho">
+	<label for="st4">4</label>
+	<input type="radio" id="st5" value="st5" name="cho">
+	<label for="st5">5</label>
+	<input type="radio" id="st6" value="st6" name="cho">
+	<label for="st6">6</label>
+	<input type="radio" id="st7" value="st7" name="cho">
+	<label for="st7">7</label>
+	<input type="radio" id="st8" value="st8" name="cho">
+	<label for="st8">8</label>
+	<input type="radio" id="st9" value="st9" name="cho">
+	<label for="st9">9</label>
+	<input type="radio" id="st10" value="st10" name="cho">
+	<label for="st10">T</label>
+	
+	<br>
+	
+	<label>SPADES</label>
+	<input type="radio" id="sp1" value="sp1" name="cho" checked>
+	<label for="sp1">A</label>
+	<input type="radio" id="sp2" value="sp2" name="cho">
+	<label for="sp2">2</label>
+	<input type="radio" id="sp3" value="sp3" name="cho">
+	<label for="sp3">3</label>
+	<input type="radio" id="sp4" value="sp4" name="cho">
+	<label for="sp4">4</label>
+	<input type="radio" id="sp5" value="sp5" name="cho">
+	<label for="sp5">5</label>
+	<input type="radio" id="sp6" value="sp6" name="cho">
+	<label for="sp6">6</label>
+	<input type="radio" id="sp7" value="sp7" name="cho">
+	<label for="sp7">7</label>
+	<input type="radio" id="sp8" value="sp8" name="cho">
+	<label for="sp8">8</label>
+	<input type="radio" id="sp9" value="sp9" name="cho">
+	<label for="sp9">9</label>
+	<input type="radio" id="sp10" value="sp10" name="cho">
+	<label for="sp10">T</label>
+	<input type="radio" id="sp11" value="sp11" name="cho">
+	<label for="sp11">J</label>
+	<input type="radio" id="sp12" value="sp12" name="cho">
+	<label for="sp12">Q</label>
+	<input type="radio" id="sp13" value="sp13" name="cho">
+	<label for="sp13">K</label>
+	
+	<br>
+	
+	<label>DOUBLE-EDGED SPADES</label>
+	<input type="radio" id="ds1" value="ds1" name="cho">
+	<label for="ds1">A</label>
+	<input type="radio" id="ds2" value="ds2" name="cho">
+	<label for="ds2">2</label>
+	<input type="radio" id="ds3" value="ds3" name="cho">
+	<label for="ds3">3</label>
+	<input type="radio" id="ds4" value="ds4" name="cho">
+	<label for="ds4">4</label>
+	<input type="radio" id="ds5" value="ds5" name="cho">
+	<label for="ds5">5</label>
+	<input type="radio" id="ds6" value="ds6" name="cho">
+	<label for="ds6">6</label>
+	<input type="radio" id="ds7" value="ds7" name="cho">
+	<label for="ds7">7</label>
+	<input type="radio" id="ds8" value="ds8" name="cho">
+	<label for="ds8">8</label>
+	<input type="radio" id="ds9" value="ds9" name="cho">
+	<label for="ds9">9</label>
+	<input type="radio" id="ds10" value="ds10" name="cho">
+	<label for="ds10">T</label>
+	
+	<br>
+	
+	<label for="betv">Bet amount: </label><input type="text" id="betv" value=100> <label for="win">Win: <span id="winv">NUM1</span></label><br>
+	<label for="chips">You have: <span id="chipc">NUM2</span> chips.<br>
+	<input type="submit" value="Bet">
+	<br>
+</form>
+<!-- https://github.com/saulspatz/SVGCards/tree/master/Decks/Horizontal4/pngs -->
+<span id="hand">
+	<img src="cards/club2.png">
+	<img src="cards/club3.png">
+	<img src="cards/club4.png">
+	<img src="cards/club5.png">
+	<img src="cards/club6.png">
+
+
+</span><br>
+<p>Last result: you <span id="wl">won/lost.</span></p>
+<p><a href="about.html">Rules/About</a><br>
+Copyright (C) 2025 Geethan Pfeifer. Licensed under the <a href="../licenses/gpl-3.0.txt">GNU GPL v3</a>.
+</p>
+</html>
+
+
+<script src="main.js"></script>
+
+</html>

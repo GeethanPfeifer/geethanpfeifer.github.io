@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Beat The Royals: Rules/About</title>
+</head>
+<body>
+<h1><a href="index.html">Beat The Royals</a></h1>
+<!--<h2>Rules</h2> -->
+<p>This is a small gambling game I made for fun.</p>
+<p>There are three types of bets the player can make, "standard", "spades", or "double-edged spades." For each type of bet, the player chooses a rank up to T, or up to K in the case of spades. The ranks are ordered A-K.</p>
+<p>Each hand, five cards are dealt.</p>
+<p>The player's score is:</p>
+<ul>
+	<li>Standard: the sum of the cards up to (and including) the rank they chose</li>
+	<li>Spades/Double-edged spades: the sum of the spade cards up to (and including) the rank they chose.</li>
+</ul>
+<p>The house's score is:</p>
+<ul>
+	<li>Standard/Double-edged spades: the sum of the royals</li>
+	<li>Spades: the sum of the non-spade royals.</li>
+</ul>
+<p>Royals have a value of ten.</p>
+<p>The bet payout varies based on the specific bet you choose. For fun, I have put in exactly one bet that is +EV (excluding rounding issues for non-multiple-of-hundred bets); the rest are -EV. Every bet is very close to 0EV though, so it won't be noticeable.
+
+<p>There is a "monte-carlo" simulation of the game <a href="mc.cpp">here.</a> It's not really monte-carlo, it just generates every possible hand.</p>
+<h2>Licensing</h2>
+<p>This about page and <a href="mc.cpp">mc.cpp</a>, the monte-carlo simulation are licensed under the <a href="../licenses/unlicense.txt">Unlicense.</a></p>
+<p>The demo of the game is licensed under the <a href="../licenses/gpl-3.0.txt">GNU GPL v3</a> or later.</p>
+<h2>Other</h2>
+<p>Please improve or make this game prettier if you so desire. This is just a throwaway program for me; it's bad enough to deal with HTML/JS, so I didn't bother making it pretty with CSS too.</p>
+<p>The card sprites are from <a href="https://github.com/saulspatz/SVGCards/tree/master/Decks/Horizontal4/pngs">here.</a></p>
+
+</body>
+
+
+
+
+</html>
